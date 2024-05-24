@@ -1,0 +1,42 @@
+# ----------------------------------------------- #
+# Note: this file originates in template-template #
+# ----------------------------------------------- #
+
+name: PR
+
+# Concurrency settings ensure only one job runs at a time for a specific combination of Git ref and workflow.
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    # only run for dependabot PRs
+    if: github.actor == 'dependabot[bot]'
+    uses: mmraisi/template-template/.github/workflows/_dependabot.yml@main
+    secrets: inherit
+
+  metadata:
+    uses: mmraisi/template-template/.github/workflows/_metadata.yml@main
+
+  template-sync:
+    needs:
+      - metadata
+    # only run for template repos
+    if: needs.metadata.outputs.repository_is_template == 'true'
+    uses: mmraisi/template-template/.github/workflows/_template_sync.yml@main
+    secrets: inherit
+    with:
+      default_branch: ${{ needs.metadata.outputs.repository_default_branch }}

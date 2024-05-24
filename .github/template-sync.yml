@@ -1,0 +1,16 @@
+additional:
+  # temporarily include repos manually # https://github.com/github/docs/issues/3630
+  - "template-node-*"
+  - "node-*"
+
+files:
+  #  files to sync to other templates
+  - "!**.js"
+  - "!**.ts"
+  - "!.github/workflows"
+  - "!package*.json"
+  - "!README.md"
+  - "!.gitignore"
+  - "!**/dependabot.yml"
+  - "!.github/dependabot.yml"
+  - "!**/template-sync.yml"
