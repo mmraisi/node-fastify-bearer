@@ -1,16 +1,16 @@
 {
-  "name": "template-node-lib",
+  "name": "node-fastify-bearer",
   "version": "0.0.0-semantically-released",
-  "description": "nodejs typescript library template",
+  "description": "NodeJS app utilizes Fastify Auth Bearer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Mahmoud Mraisi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmraisi/template-node-lib"
+    "url": "https://github.com/mmraisi/node-fastify-bearer"
   },
   "bugs": {
-    "url": "https://github.com/mmraisi/template-node-lib/issues"
+    "url": "https://github.com/mmraisi/node-fastify-bearer/issues"
   },
   "scripts": {
     "lint": "eslint .",
@@ -22,19 +22,18 @@
     "test:ci": "npm run test:unit:100"
   },
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=20"
   },
   "keywords": [
-    "template",
+    "bearer",
     "node",
-    "library"
+    "fastify"
   ],
   "files": [
-		"dist"
-	],
+    "dist"
+  ],
   "devDependencies": {
     "@semantic-release/github": "^10.0.5",
     "@semantic-release/release-notes-generator": "^12.1.0",
