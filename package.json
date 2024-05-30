@@ -25,6 +25,7 @@
   "dependencies": {
     "@dnlup/fastify-traps": "^3.0.2",
     "@fastify/autoload": "^5.8.1",
+    "@fastify/bearer-auth": "^9.4.0",
     "@fastify/cors": "^9.0.1",
     "api-problem": "^9.0.2",
     "dotenv": "^16.4.5",
@@ -43,12 +44,11 @@
     "dist"
   ],
   "devDependencies": {
-    "sinon": "^17.0.1",
     "@semantic-release/github": "^10.0.5",
     "@semantic-release/release-notes-generator": "^12.1.0",
     "@types/glob": "^8.1.0",
-    "@types/sinon": "^17.0.3",
     "@types/node": "^20.12.12",
+    "@types/sinon": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
     "c8": "^9.1.0",
@@ -56,6 +56,7 @@
     "glob": "^10.4.1",
     "nodemon": "^3.1.2",
     "semantic-release": "^23.1.1",
+    "sinon": "^17.0.1",
     "tsx": "^4.11.0",
     "typescript": "^5.4.5"
   }
