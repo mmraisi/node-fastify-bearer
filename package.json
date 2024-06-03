@@ -18,7 +18,7 @@
     "build": "rm -rf dist && tsc --build",
     "dev": "nodemon src/index.ts",
     "test": "glob -c 'tsx --test' 'test/unit/**/*.test.ts'",
-    "test:unit:100": "glob -c 'c8 --100 --reporter html --reporter text tsx --test' 'test/unit/**/*.test.ts'",
+    "test:unit:100": "glob -c 'c8 --check-coverage --lines 100 --reporter html --reporter text tsx --test' 'test/unit/**/*.test.ts'",
     "test:ci": "npm run test:unit:100"
   },
   "license": "MIT",

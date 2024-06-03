@@ -80,8 +80,8 @@ describe("Error Handler Tests", () => {
     sinon.assert.calledWith(mockReply.type, "application/json");
   });
 
-  test("Handles QueryFailedError instance", async () => {
-    const error = new Error("error message from db");
+  test("Handles System errors", async () => {
+    const error = new Error("error message from system");
 
     const mockReply = buildMockReply();
 
