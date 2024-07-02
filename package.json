@@ -58,6 +58,6 @@
     "semantic-release": "^23.1.1",
     "sinon": "^17.0.1",
     "tsx": "^4.16.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   }
 }
