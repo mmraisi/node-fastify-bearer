@@ -51,7 +51,7 @@
     "@types/sinon": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
-    "c8": "^9.1.0",
+    "c8": "^10.1.2",
     "eslint": "^8.57.0",
     "glob": "^10.4.3",
     "nodemon": "^3.1.4",
