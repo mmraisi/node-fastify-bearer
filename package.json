@@ -44,7 +44,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@semantic-release/github": "^10.1.0",
+    "@semantic-release/github": "^10.1.1",
     "@semantic-release/release-notes-generator": "^12.1.0",
     "@types/glob": "^8.1.0",
     "@types/node": "^20.14.11",
