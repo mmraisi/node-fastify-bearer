@@ -25,7 +25,7 @@
   "dependencies": {
     "@dnlup/fastify-traps": "^3.0.2",
     "@fastify/autoload": "^5.10.0",
-    "@fastify/bearer-auth": "^9.4.0",
+    "@fastify/bearer-auth": "^10.0.0",
     "@fastify/cors": "^9.0.1",
     "api-problem": "^9.0.2",
     "dotenv": "^16.4.5",
