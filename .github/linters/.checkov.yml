@@ -1,0 +1,15 @@
+# ----------------------------------------------- #
+# Note: this file originates in template-node-js #
+# ----------------------------------------------- #
+
+quiet: true
+skip-check:
+  - CKV2_GIT_1
+  - CKV_DOCKER_2
+  - CKV2_GHA_1
+  - CKV_GHA_3
+  - CKV_GHA_7
+  - BC_DKR_3
+  - CKV_GIT_1
+  - CKV_SECRET_6
+  - CKV_GIT_5
