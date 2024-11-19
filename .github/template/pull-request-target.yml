@@ -6,6 +6,10 @@ name: pull_request_target
 
 on: pull_request_target
 
+permissions:
+  contents: write
+  pull-requests: write
+
 # Concurrency settings ensure only one job runs at a time for a specific combination of Git ref and workflow.
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
